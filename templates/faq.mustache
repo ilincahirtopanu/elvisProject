@@ -1,0 +1,84 @@
+<!doctype html>
+<html class="no-js" lang="en">
+{{> top}}
+
+<!-- welcome section -->
+<!--breadcumb start here-->
+<section class="xs-inner-welcome-section fundpress-inner-welcome-section fundpress-inner-bg-2 parallax-window" data-parallax="scroll" data-image-src="{{faq.img}}">
+	<div class="xs-solid-overlay xs-bg-black"></div>
+	<div class="container">
+		<div class="fundpress-inner-welcome-content">
+			<h2 class="color-white">Frequently Asked Questions</h2>
+			<ul class="xs-breadcumb fundpress-breadcumb">
+				<li><a href="index.html" class="color-white"> Home /</a> FAQ</li>
+			</ul>
+		</div>
+	</div>
+</section>
+<!--breadcumb end here--><!-- End welcome section -->
+
+<main class="xs-all-content-wrapper">
+	<!-- faq section -->
+	<section class="xs-content-section-padding xs-faq-section fundpress-faq-section">
+	<div class="container">
+		<div class="xs-isotope-grid-wraper">
+			<div class="xs-isotope-nav fundpress-isotope-nav">
+				<ul id="filters" class="option-set clearfix">
+					<!-- <li><a href="#" class="selected" data-filter=".personal">Personal</a></li> -->
+                    {{#faq.sections}}
+					<li><a href="#" data-filter=".{{name}}">{{name}}</a></li>
+					{{/faq.sections}}
+				</ul>
+			</div><!-- .xs-isotope-nav .fundpress-isotope-nav END -->
+			<div class="xs-col-1-isotope-grid">
+                <!-- tried looping through the sections I created -->
+                <!-- {{#faq.sections}} -->
+				<div class="xs-col-1-isotope-grid-item personal">
+					<div class="fundpress-grid-item-content row xs-marign-0">
+						<div class="fundpress-faq-wraper col-md-6">
+                            <!-- looping through the questions in each section -->
+                            {{#faq.personal}}
+							<div class="fundpresss-ingle-faq">
+								<h4 class="color-navy-blue clearfix"><span class="xs-firstcharacter color-navy-blue">Q.</span> {{question}}</h4>
+								<p class="clearfix"><span class="xs-firstcharacter color-green">A.</span> {{answer}}</p>
+								<span class="xs-separetor border-color-green border-separetor xs-separetor-v2 fundpress-separetor"></span>
+							</div>
+                            {{/faq.personal}}
+						</div>
+					</div>
+				</div><!-- .xs-col-1-isotope-grid-item END -->
+                <div class="xs-col-1-isotope-grid-item career">
+					<div class="fundpress-grid-item-content row xs-marign-0">
+						<div class="fundpress-faq-wraper col-md-6">
+                            <!-- looping through the questions in each section -->
+                            {{#faq.career}}
+							<div class="fundpresss-ingle-faq">
+								<h4 class="color-navy-blue clearfix"><span class="xs-firstcharacter color-navy-blue">Q.</span> {{q}}</h4>
+								<p class="clearfix"><span class="xs-firstcharacter color-green">A.</span> {{a}}</p>
+								<span class="xs-separetor border-color-green border-separetor xs-separetor-v2 fundpress-separetor"></span>
+							</div>
+                            {{/faq.career}}
+						</div>
+					</div>
+				</div><!-- .xs-col-1-isotope-grid-item END -->
+                <div class="xs-col-1-isotope-grid-item family">
+					<div class="fundpress-grid-item-content row xs-marign-0">
+						<div class="fundpress-faq-wraper col-md-6">
+                            <!-- looping through the questions in each section -->
+                            {{#faq.family}}
+							<div class="fundpresss-ingle-faq">
+								<h4 class="color-navy-blue clearfix"><span class="xs-firstcharacter color-navy-blue">Q.</span> {{qu}}</h4>
+								<p class="clearfix"><span class="xs-firstcharacter color-green">A.</span> {{an}}</p>
+								<span class="xs-separetor border-color-green border-separetor xs-separetor-v2 fundpress-separetor"></span>
+							</div>
+                            {{/faq.family}}
+						</div>
+					</div>
+				</div><!-- .xs-col-1-isotope-grid-item END -->
+                <!-- {{/faq.sections}} -->
+</section>	<!-- End faq section -->
+</main>
+
+{{>footer}}
+</body>
+</html>
