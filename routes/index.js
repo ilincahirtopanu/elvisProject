@@ -41,5 +41,18 @@ router.get('/faq', (req, res, next) =>
     logo: logo,
     faq: faq
   })
+  let select = req.query.selected;
+  for (let i = 0; i < 3; i++) {
+    faq.sections[i] = "";
+  }
+  if (select === 'personal') {
+    faq.sections[0].selected = "selected"
+  }
+  if (select === 'career') {
+    faq.sections[1].selected = "selected"
+  }
+  if (select === 'family') {
+    faq.sections[2].selected = "selected"
+  }
 })
 module.exports = router

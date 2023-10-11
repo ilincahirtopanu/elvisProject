@@ -1,41 +1,46 @@
 {
     "img": "assets/images/faq.jpg",
-    "personal": [
-        {"question":"When was Elvis born?","answer":"January 8, 1935"},
-        {"question":"When did Elvis die?","answer":"Elvis Presley passed away due to heart failure August 16, 1977, at Graceland in Memphis, Tennessee. He was 42 years old."},
-        {"question":"Where was Elvis born?","answer":"Tupelo, Mississippi"},
-        {"question":"What year did Elvis graduate high school?","answer":"1953"},
-        {"question":"When did Elvis get his first guitar?","answer":"He received one purchased from Tupelo Hardware Company on January 8, 1946 - his 11th birthday."},
-        {"question":"When did the Presley family move to Memphis?","answer":"November of 1948"},
-        {"question":"Before becoming famous, what was Elvis' job?","answer":"He drove a delivery truck for the Memphis company, Crown Electric."},
-        {"question":"What year is the pink Cadillac in the Elvis Presley car museum?","answer":"1955 Fleetwood"},
-        {"question":"Where was the first house Elvis purchased?","answer":"1034 Audubon Drive, Memphis, Tennessee"},
-        {"question":"When did Elvis buy Graceland?","answer":"March of 1957 for $102,500"},
-        {"question":"Who did Elvis buy Graceland from?","answer":"Mrs. Ruth Brown Moore, former wife of Dr. Thomas Moore"}
-    ],
-    "career": [
-        {"q":"When did Elvis record his first record at Sun Studio?","a":"He recorded 'That's All Right' on July 5, 1954."},
-        {"q":"Where was Elvis' first billed show?","a":"He performed at Overton Park Shell on July 30, 1954."},
-        {"q":"On what Saturday radio show did Elvis regularly perform?","a":"Louisiana Hayride from Shreveport, Louisiana."},
-        {"q":"For what product did Elvis make his only commercial?","a":"Southern Made Doughnuts radio jingle while on the Louisiana Hayride."},
-        {"q":"What was Elvis' first gold record?","a":"'Heartbreak Hotel'"},
-        {"q":"On what show was Elvis' first national TV appearance?","a":"Tommy and Jimmy Dorsey Stage Show on January 28, 1956."},
-        {"q":"How many movies did Elvis make?","a":"31 feature films and 2 concert documentaries."},
-        {"q":"What was Elvis' first movie?","a":"'Love Me Tender'"},
-        {"q":"Name the only three cities outside of the US where Elvis performed?","a":"Ottawa, Vancouver and Toronto, Canada."},
-        {"q":"How many grammy awards did Elvis recieve in his lifetime?","a":"Three Grammys - all for his Gospel music."},
-        {"q":"How many records is it estimated that Elvis sold worldwide?","a":"Over one billion units sold."},
-        {"q":"Where was his last concert?","a":"Market Square Arena, Indianapolis, IN on June 26, 1977"}
-    ],
-    "family":[
-        {"qu":"Who did Elvis marry?","an":"Elvis Presley's wife was Priscilla (Beaulieu) Presley."},
-        {"qu":"At what hotel in Las Vegas were Elvis and Priscilla married?","an":"Aladdin Hotel on May 1, 1967."},
-        {"qu":"When was their daughter born?","an":"Lisa Marie Presley was born on February 1, 1968 at Baptist Memorial Hospital in Memphis, Tennessee."}
-    ],
+    "personal": {
+        "questions" : [ 
+            {"question":"When was Elvis born?","answer":"January 8, 1935"},
+            {"question":"When did Elvis die?","answer":"Elvis Presley passed away due to heart failure August 16, 1977, at Graceland in Memphis, Tennessee. He was 42 years old."},
+            {"question":"Where was Elvis born?","answer":"Tupelo, Mississippi"},
+            {"question":"What year did Elvis graduate high school?","answer":"1953"},
+            {"question":"When did Elvis get his first guitar?","answer":"He received one purchased from Tupelo Hardware Company on January 8, 1946 - his 11th birthday."},
+            {"question":"When did the Presley family move to Memphis?","answer":"November of 1948"},
+            {"question":"Before becoming famous, what was Elvis' job?","answer":"He drove a delivery truck for the Memphis company, Crown Electric."},
+            {"question":"What year is the pink Cadillac in the Elvis Presley car museum?","answer":"1955 Fleetwood"},
+            {"question":"Where was the first house Elvis purchased?","answer":"1034 Audubon Drive, Memphis, Tennessee"},
+            {"question":"When did Elvis buy Graceland?","answer":"March of 1957 for $102,500"},
+            {"question":"Who did Elvis buy Graceland from?","answer":"Mrs. Ruth Brown Moore, former wife of Dr. Thomas Moore"}
+        ]
+    },
+    "career": {
+        "questions": [
+            {"question":"When did Elvis record his first record at Sun Studio?","answer":"He recorded 'That's All Right' on July 5, 1954."},
+            {"question":"Where was Elvis' first billed show?","answer":"He performed at Overton Park Shell on July 30, 1954."},
+            {"question":"On what Saturday radio show did Elvis regularly perform?","answer":"Louisiana Hayride from Shreveport, Louisiana."},
+            {"question":"For what product did Elvis make his only commercial?","answer":"Southern Made Doughnuts radio jingle while on the Louisiana Hayride."},
+            {"question":"What was Elvis' first gold record?","answer":"'Heartbreak Hotel'"},
+            {"question":"On what show was Elvis' first national TV appearance?","answer":"Tommy and Jimmy Dorsey Stage Show on January 28, 1956."},
+            {"question":"How many movies did Elvis make?","answer":"31 feature films and 2 concert documentaries."},
+            {"question":"What was Elvis' first movie?","answer":"'Love Me Tender'"},
+            {"question":"Name the only three cities outside of the US where Elvis performed?","answer":"Ottawa, Vancouver and Toronto, Canada."},
+            {"question":"How many grammy awards did Elvis recieve in his lifetime?","answer":"Three Grammys - all for his Gospel music."},
+            {"question":"How many records is it estimated that Elvis sold worldwide?","answer":"Over one billion units sold."},
+            {"question":"Where was his last concert?","answer":"Market Square Arena, Indianapolis, IN on June 26, 1977"}
+        ]
+    },
+    "family": {
+        "questions": [
+            {"question":"Who did Elvis marry?","answer":"Elvis Presley's wife was Priscilla (Beaulieu) Presley."},
+            {"question":"At what hotel in Las Vegas were Elvis and Priscilla married?","answer":"Aladdin Hotel on May 1, 1967."},
+            {"question":"When was their daughter born?","answer":"Lisa Marie Presley was born on February 1, 1968 at Baptist Memorial Hospital in Memphis, Tennessee."}
+        ]
+    },
     "sections": [
-        {"name": "personal"},
-        {"name": "career"},
-        {"name": "family"}
-    ],
-    "page": "personal"
+        {"name": "personal", "selected": "selected"},
+        {"name": "career", "selected" : ""},
+        {"name": "family", "selected" : ""}
+    ]
 }

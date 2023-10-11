@@ -24,26 +24,24 @@
 		<div class="xs-isotope-grid-wraper">
 			<div class="xs-isotope-nav fundpress-isotope-nav">
 				<ul id="filters" class="option-set clearfix">
-					<!-- <li><a href="#" class="selected" data-filter=".personal">Personal</a></li> -->
                     {{#faq.sections}}
-					<li><a href="#" data-filter=".{{name}}">{{name}}</a></li>
+					<li><a href="#" class="{{selected}}" data-filter=".{{name}}">{{name}}</a></li>
 					{{/faq.sections}}
 				</ul>
 			</div><!-- .xs-isotope-nav .fundpress-isotope-nav END -->
 			<div class="xs-col-1-isotope-grid">
                 <!-- tried looping through the sections I created -->
-                <!-- {{#faq.sections}} -->
 				<div class="xs-col-1-isotope-grid-item personal">
 					<div class="fundpress-grid-item-content row xs-marign-0">
 						<div class="fundpress-faq-wraper col-md-6">
                             <!-- looping through the questions in each section -->
-                            {{#faq.personal}}
+                            {{#faq.personal.questions}}
 							<div class="fundpresss-ingle-faq">
 								<h4 class="color-navy-blue clearfix"><span class="xs-firstcharacter color-navy-blue">Q.</span> {{question}}</h4>
 								<p class="clearfix"><span class="xs-firstcharacter color-green">A.</span> {{answer}}</p>
 								<span class="xs-separetor border-color-green border-separetor xs-separetor-v2 fundpress-separetor"></span>
 							</div>
-                            {{/faq.personal}}
+                            {{/faq.personal.questions}}
 						</div>
 					</div>
 				</div><!-- .xs-col-1-isotope-grid-item END -->
@@ -51,13 +49,13 @@
 					<div class="fundpress-grid-item-content row xs-marign-0">
 						<div class="fundpress-faq-wraper col-md-6">
                             <!-- looping through the questions in each section -->
-                            {{#faq.career}}
+                            {{#faq.career.questions}}
 							<div class="fundpresss-ingle-faq">
-								<h4 class="color-navy-blue clearfix"><span class="xs-firstcharacter color-navy-blue">Q.</span> {{q}}</h4>
-								<p class="clearfix"><span class="xs-firstcharacter color-green">A.</span> {{a}}</p>
+								<h4 class="color-navy-blue clearfix"><span class="xs-firstcharacter color-navy-blue">Q.</span> {{question}}</h4>
+								<p class="clearfix"><span class="xs-firstcharacter color-green">A.</span> {{answer}}</p>
 								<span class="xs-separetor border-color-green border-separetor xs-separetor-v2 fundpress-separetor"></span>
 							</div>
-                            {{/faq.career}}
+                            {{/faq.career.questions}}
 						</div>
 					</div>
 				</div><!-- .xs-col-1-isotope-grid-item END -->
@@ -65,18 +63,23 @@
 					<div class="fundpress-grid-item-content row xs-marign-0">
 						<div class="fundpress-faq-wraper col-md-6">
                             <!-- looping through the questions in each section -->
-                            {{#faq.family}}
+                            {{#faq.family.questions}}
 							<div class="fundpresss-ingle-faq">
-								<h4 class="color-navy-blue clearfix"><span class="xs-firstcharacter color-navy-blue">Q.</span> {{qu}}</h4>
-								<p class="clearfix"><span class="xs-firstcharacter color-green">A.</span> {{an}}</p>
+								<h4 class="color-navy-blue clearfix"><span class="xs-firstcharacter color-navy-blue">Q.</span> {{question}}</h4>
+								<p class="clearfix"><span class="xs-firstcharacter color-green">A.</span> {{answer}}</p>
 								<span class="xs-separetor border-color-green border-separetor xs-separetor-v2 fundpress-separetor"></span>
 							</div>
-                            {{/faq.family}}
+                            {{/faq.family.questions}}
 						</div>
 					</div>
 				</div><!-- .xs-col-1-isotope-grid-item END -->
-                <!-- {{/faq.sections}} -->
-</section>	<!-- End faq section -->
+			</div>
+		</div>
+		<div class="xs-btn-wraper text-center">
+			<a href="#" class="xs-btn round-btn navy-blue-btn">More Questions ?</a>
+		</div>
+	</div>
+	</section>	<!-- End faq section -->
 </main>
 
 {{>footer}}
